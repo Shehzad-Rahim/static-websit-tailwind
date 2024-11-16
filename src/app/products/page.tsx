@@ -1,15 +1,17 @@
-import ProductsCard from "./ProductsCard"
-import bluewatch from '../../public/images/bluewatch.png'
-import gamingkeyboard from '../../public/images/gamingkeyboard.png'
-import ipad7 from '../../public/images/ipad7.png'
-import keyboardset from '../../public/images/keyboardset.png'
-import laptop from '../../public/images/laptop.png'
-import pinkbuds from '../../public/images/pinkbuds.png'
+
+import ProductsCard from '@/components/ProductsCard'
+import bluewatch from '../../../public/images/bluewatch.png'
+import gamingkeyboard from '../../../public/images/gamingkeyboard.png'
+import ipad7 from '../../../public/images/ipad7.png'
+import keyboardset from '../../../public/images/keyboardset.png'
+import laptop from '../../../public/images/laptop.png'
+import pinkbuds from '../../../public/images/pinkbuds.png'
 function Products() {
   return (
-  <div id="Products" className="my-32">
+  <div className="my-10">
     <h1 className="sm:text-6xl text-5xl text-center my-10">Products</h1>
     <div className="flex flex-wrap justify-center gap-10 lg:mx-20 mx-10 my-10">
+
       <ProductsCard 
       image={bluewatch}
       title="Watch"

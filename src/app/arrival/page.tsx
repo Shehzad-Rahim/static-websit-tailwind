@@ -1,14 +1,15 @@
-import ProductsCard from "./ProductsCard"
-import camera from '../../public/images/camera.png'
-import speaker from '../../public/images/speaker.png'
-import charger from '../../public/images/carcharger.png'
+import camera from '../../../public/images/camera.png'
+import speaker from '../../../public/images/speaker.png'
+import charger from '../../../public/images/carcharger.png'
+import ProductsCard from '@/components/ProductsCard'
 
 
 function NewArrival() {
   return (
-    <div id="NewArrival" className="my-20 overflow-x-hidden">
-      <h1 className="text-center sm:text-6xl text-5xl my-14">New Arrival</h1>
+    <div id="NewArrival" className=" overflow-x-hidden">
+      <h1 className="text-center sm:text-6xl text-5xl mb-10">New Arrival</h1>
       <div className="flex flex-wrap justify-center gap-10 lg:mx-20 mx-10 my-10 ">
+      
       <ProductsCard
       image={camera}
       title="Sony Camera"

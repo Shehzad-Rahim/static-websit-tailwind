@@ -4,7 +4,7 @@ import watch from '../../public/images/watch.png'
 
 function Hero() {
   return (
-    <div className="flex lg:flex-row lg:gap-0 gap-20 flex-col justify-between items-center xl:mx-32 sm:mx-20 mx-10 my-10">
+    <div className="flex lg:flex-row lg:gap-0 gap-20 flex-col justify-between items-center xl:mx-32 sm:mx-20 mx-10 my-20">
         <div className=" flex flex-col gap-2">
             <h1 className="sm:text-5xl text-4xl">The Simple Way</h1>
             <p className="text-2xl">Your Digital Home</p>
@@ -16,7 +16,7 @@ function Hero() {
           <Image className=' w-[90%] h-[90%]' src={watch} alt='headphones'></Image>
           </div>
 
-          <div className="flex justify-center items-center  sm:-rotate-12 -rotate-[20deg] shadow-[0px_0px_10px_white] bg-white rounded-md sm:w-[310px] sm:h-[310px] w-[270px] h-[240px] ">
+          <div id='headphones' className="flex justify-center items-center  sm:-rotate-12 -rotate-[20deg] shadow-[0px_0px_10px_white] bg-white rounded-md sm:w-[310px] sm:h-[310px] w-[270px] h-[240px] ">
           <Image className='w-[90%] h-[90%]' src={headphone} alt='headphones'></Image>
           </div>
         </div>

@@ -11,20 +11,20 @@ function Header() {
 
   return (
     <>
-    <header className="flex sticky left-0 top-0 bg-black z-20 justify-between md:px-20 px-6 py-6 ">
+    <header className="flex bg-black z-20 justify-between md:px-20 px-6 py-6 ">
       <h1 className="sm:text-3xl text-xl z-10 ">Digital Way</h1>
       <ul className="md:flex hidden gap-6 items-center text-xl ">
         <li className="hover:text-gray-400 transition-all">
             <Link href={'/'}>Home</Link>
         </li>
         <li className="hover:text-gray-400 transition-all">
-            <Link href={'#Products'}>Products</Link>
+            <Link href={'/products'}>Products</Link>
         </li>
         <li className="hover:text-gray-400 transition-all">
-            <Link href={'#NewArrival'}>New Arrival</Link>
+            <Link href={'/arrival'}>New Arrival</Link>
         </li>
         <li className="hover:text-gray-400 transition-all">
-            <Link href={'#Contact'}>Contact</Link>
+            <Link href={'/contact'}>Contact</Link>
         </li>
       </ul>
       <button
@@ -59,17 +59,17 @@ function Header() {
             </svg>
           </button>
           {isMenuOpen && (
-          <div id='toggleNavbar' className="md:hidden my-4 absolute top-0 w-full text-lg bg-[#1c1c1c] bg-opacity-[0.9]  text-white flex flex-col items-center space-y-2 py-2">
+          <div id='toggleNavbar' className="md:hidden my-4 absolute top-0 w-full text-lg bg-black bg-opacity-[0.9]  text-white flex flex-col items-center space-y-2 py-2">
             <Link className='hover:text-gray-300' href="/"  onClick={toggleMenu}> 
                 <h1>Home</h1>
             </Link>
-            <Link className='hover:text-gray-300' href="#Products" onClick={toggleMenu}>
+            <Link className='hover:text-gray-300' href="/products" onClick={toggleMenu}>
             <h1>Products</h1>
             </Link>
-            <Link className='hover:text-gray-300' href="#NewArrival" onClick={toggleMenu}>
+            <Link className='hover:text-gray-300' href="/arrival" onClick={toggleMenu}>
              <h1>New Arrival</h1>
             </Link>
-            <Link className='hover:text-gray-300' href="#Contact" onClick={toggleMenu}>
+            <Link className='hover:text-gray-300' href="/contact" onClick={toggleMenu}>
              <h1>Contact</h1>
             </Link>
             
